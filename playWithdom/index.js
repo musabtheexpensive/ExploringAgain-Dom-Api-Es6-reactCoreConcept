@@ -101,4 +101,4 @@ for (let item of li) {
 
 // ul.children[0].removeChild(1);
 // console.log(ul.children[0].removeChild());
-// ul.removeChild();
+// ul.removeChild();;
