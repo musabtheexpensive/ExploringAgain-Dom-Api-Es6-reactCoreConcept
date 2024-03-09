@@ -73,7 +73,6 @@ for (let item of li) {
 // h3.innerText = "made by js";
 
 // const container = document.querySelector(".grandparent");
-
 // const div = document.createElement("div");
 // div.innerHTML = `
 //     <h1>Hello</h1>
@@ -89,7 +88,6 @@ for (let item of li) {
 
 // container.appendChild(div);
 // let h1 = document.getElementById("parent-one");
-
 // container.insertBefore(div, h1);
 
 // console.log(container);
