@@ -25,31 +25,22 @@
     </div>
 
     <script>
-      document.getElementById("grandparent").addEventListener(
-        "click",
-        function (e) {
-          console.log("Grandparen");
-        },
-        true
-      );
+        // bubbling hole niche theke upore ashte thake, r capture hole upor theke niche ashte thake. capture korar jonno event newa jabe na. r true die dite hobe main function er upor. r exact jaygay thamaite hoile e.stopPropagation() use korte honbe. r bubble er jonno e ebong true bebohar er proyojon ney 
+      document
+        .getElementById("grandparent")
+        .addEventListener("click", function (e) {
+          console.log("Grandparent");
+        });
       //asdasdas
 
-      document.getElementById("parent").addEventListener(
-        "click",
-        function (e) {
-          console.log("parent");
-          e.stopPropagation();
-        },
-        true
-      );
+      document.getElementById("parent").addEventListener("click", function (e) {
+        console.log("parent");
+      });
       //asdasdasd
-      document.getElementById("child").addEventListener(
-        "click",
-        function () {
-          console.log("child");
-        },
-        true
-      );
+      document.getElementById("child").addEventListener("click", function (e) {
+        console.log("child");
+        e.stopPropagation();
+      });
     </script>
   </body>
 </html>
