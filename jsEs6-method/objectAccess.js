@@ -1,11 +1,11 @@
-// const person = { name: 'mehedy', age: 26, address: 'Rajshahi' }
+const person = { name: 'mehedy', age: 26, address: 'Rajshahi' }
 
 // // dot notation, bracket notation
 
-// console.log(person.age)
-// console.log(person["age"])
-// const propertyName = "age"
-// console.log(person[propertyName])
+console.log(person.age)
+console.log(person["age"])
+const propertyName = "age"
+console.log(person[propertyName])
 
 const complexObject = {
     id: 1,
