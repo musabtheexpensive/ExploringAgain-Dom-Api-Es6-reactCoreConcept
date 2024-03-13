@@ -70,7 +70,6 @@ console.log(y);
 
 //......// filter method normal function
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
-const numbers1 = [1, 3, 5, 7, 9];
 
 const filter = (numbers) => {
   const result = [];
@@ -85,13 +84,12 @@ const m = filter(numbers);
 console.log(m);
 
 //......// filter method es6 function
-const n = numbers1.filter((item) => item % 2 === 0);
+const n = numbers.filter((item) => item % 2 === 0);
 console.log(n);
 
 // reduce
 
 // const arr = [1,2,3,4,5];
-
 // previous + current = result
 /*
     1    +    2     = 3 
