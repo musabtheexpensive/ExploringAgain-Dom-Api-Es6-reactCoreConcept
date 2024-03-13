@@ -30,11 +30,8 @@
 // arr.forEach(item => sum += item)// sum = sum + item
 // console.log(sum)
 
-
-// map 
-
+// map
 // const arr = [1,2,3];
-
 // arr.map((item) => console.log(item))
 
 // forEach function does not return anything
@@ -48,47 +45,48 @@
 // console.log(result1)
 // console.log("main",arr)
 
-// const fruits = ["Mango","chingo","bango","Tango"];
+const fruits1 = ["Mango", "chingo", "bango", "Tango"];
 
 // array.forEach((element,index,mainArray) => {})
-// fruits.map((item,index,arr) => console.log(item, index,arr))
+fruits1.map((item, index, arr) => console.log(item, index, arr));
 
+// find method normal function
+const fruits = ["Mango", "chingo", "bango", "Tango", "bango"];
 
-// find method
-// const fruits = ["Mango","chingo","bango","Tango","bango"];
+const find = (fruits) => {
+  for (let item of fruits) {
+    if (item === "bango") {
+      return item;
+    }
+  }
+};
 
-// const find = (fruits) => {
-//     for(let item of fruits){
-//         if(item === "bango"){
-//             return item
-//         }
-//     }
-// }
+const x = find(fruits);
+console.log(x);
 
-// const x = find(fruits)
-// console.log(x)
+// find method es6  arrow function
+const y = fruits.find((item) => item === "bango");
+console.log(y);
 
-// const y = fruits.find((item) => item === "bango")
-// console.log(y)
+//......// filter method normal function
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+const numbers1 = [1, 3, 5, 7, 9];
 
-// const numbers = [1,2,3,4,5,6,7,8];
-// const numbers = [1,3,5,7,9];
+const filter = (numbers) => {
+  const result = [];
+  for (let item of numbers) {
+    if (item % 2 === 0) {
+      result.push(item);
+    }
+  }
+  return result;
+};
+const m = filter(numbers);
+console.log(m);
 
-// const filter = numbers =>{
-//     const result = [];
-//     for(let item of numbers){
-//         if(item%2 === 0){
-//             result.push(item)
-//         }
-//     }
-//     return result;
-// }
-// const x = filter(numbers)
-// console.log(x)
-
-// const y = numbers.filter((item) => item%2 === 0)
-// console.log(y)
-
+//......// filter method es6 function
+const n = numbers1.filter((item) => item % 2 === 0);
+console.log(n);
 
 // reduce
 
