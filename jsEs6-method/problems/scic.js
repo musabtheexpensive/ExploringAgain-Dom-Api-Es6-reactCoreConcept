@@ -12,3 +12,7 @@ const students = [
 
 const scic=students.filter((student)=>student.avg>=50&&student.fiftyPercent===true);
 console.log(scic);
+
+const scicEmails=students.map((student)=>student.email).join(", ");
+console.log(scicEmails);
+
